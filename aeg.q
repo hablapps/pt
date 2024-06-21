@@ -12,7 +12,7 @@ ps:sx where (<).' sx:syms cross syms
 aeg:{@[0f^co[x;y]`;1]}
 pv:aeg .' 0f^({x`close}')t([]sym:ps)
 ix:ps pv?min pv
-ix,(a;b):lrf .(t([]sym:ix))`close
+ix,(a;b):lrf . log(t([]sym:ix))`close
 
 /
 mx:flip("f"$1,'not null reverse m),'m:(0,sums[reverse 1_til count[syms]])_ pv
@@ -20,3 +20,4 @@ pyhm[mx;`xticklabels pykw syms;`yticklabels pykw syms;`cmap pykw `RdYlGn_r]
 pysh:.pykx.import[`matplotlib.pyplot]`:show
 pysh[::]
 \
+
