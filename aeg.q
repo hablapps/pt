@@ -10,8 +10,8 @@ ps:sx where (<).' sx:syms cross syms
 
 aeg:{@[0f^co[x;y]`;1]}
 pv:aeg .' 0f^({x`close}')t([]sym:ps)
-ix:ps pv?min pv
-ix,(a;b):lrf . log(t([]sym:ix))`close
+ix:ps pv?lw:min pv
+ix,lw,(a;b):lrf . log(t([]sym:ix))`close
 
 /
 pyhm:.pykx.import[`seaborn]`:heatmap
