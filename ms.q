@@ -10,9 +10,9 @@ syms:exec sym from cls
 ps:sx where (<).' sx:syms cross syms
 pv:aeg .' 0f^({x`close}')cls([]sym:ps)
 
-lrf:{enlist[y]lsq x xexp/:0 1}
+lrf:{first enlist[y]lsq x xexp/:0 1}
 sm:{
- (a;b):first lrf . log(cls([]sym:x))`close;
+ (a;b):lrf . log(cls([]sym:x))`close;
  {[a;b;x;y]y-a+b*x}[a;b]}
 
 /
