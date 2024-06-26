@@ -1,7 +1,7 @@
 #!/bin/bash
 
-q=/Users/j/Lib/q/m64/q
-dash=/Users/j/Lib/dash
+q=~/Lib/q/m64/q
+dash=~/Lib/dash
 
 SYM=sym
 HDB_PORT=5009
