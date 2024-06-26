@@ -18,7 +18,7 @@ pysh:.pykx.import[`matplotlib.pyplot]`:show
 pysh[::]
 \
 
-lrf:{enlist[y]lsq x xexp/:0 1}
-ab:{first lrf . log(cls([]sym:x))`close}
+lrf:{first enlist[y]lsq x xexp/:0 1}
+ab:{lrf . log(cls([]sym:x))`close}
 sm:{[a;b;x;y]y-a+b*x}. ab@
 
