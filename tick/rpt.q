@@ -14,5 +14,6 @@ upd:{d^:exec sym!log(ask+bid)%2 from select by sym from y}
 .z.ts:{.u.pub[`spread;([]time:1#.z.N;spread:sp . d ix)]}
 \t 16
 
-(hopen `$":",.z.x 0)"(.u.sub[`quote;",(.Q.s1 ix),"])"
+tp:hopen`$":",.z.x 0
+tp"(.u.sub[`quote;",(.Q.s1 ix),"])"
 
