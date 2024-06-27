@@ -7,8 +7,8 @@ ps:sx where (<).' sx:syms cross syms
 
 \l pykx.q
 co:.pykx.import[`statsmodels.tsa.stattools]`:coint
-aeg:@[;1]co[<]::
-pv:aeg .'({x`close}')cls([]sym:ps)
+cof:@[;1]co[<]::
+pv:cof .'({x`close}')cls([]sym:ps)
 
 /
 pyhm:.pykx.import[`seaborn]`:heatmap
