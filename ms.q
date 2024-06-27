@@ -1,14 +1,14 @@
-\l pykx.q
-co:.pykx.import[`statsmodels.tsa.stattools]`:coint
-
-rs:{select sym,close from stock where date within(.z.d-x;.z.d)}
+rs:{select close by sym from stock where date within(.z.d-x;.z.d)}
 hdb:`$":",.z.x 0
-cls:`sym xgroup hdb(rs;2*365)
+cls:hdb(rs;2*365)
 
-aeg:{@[0f^co[x;y]`;1]}
 syms:exec sym from cls
 ps:sx where (<).' sx:syms cross syms
-pv:aeg .' 0f^({x`close}')cls([]sym:ps)
+
+\l pykx.q
+co:.pykx.import[`statsmodels.tsa.stattools]`:coint
+aeg:@[;1]co[<]::
+pv:aeg .'({x`close}')cls([]sym:ps)
 
 /
 pyhm:.pykx.import[`seaborn]`:heatmap
