@@ -1,2 +1,2 @@
 # pt
-Pair Trading in kdb+/q
+Pairs Trading in kdb+/q
