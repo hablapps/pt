@@ -15,5 +15,5 @@ upd:{d^:exec sym!log(ask+bid)%2 from select by sym from y}
 \t 16
 
 tp:hopen`$":",.z.x 0
-tp"(.u.sub[`quote;",(.Q.s1 ix),"])"
+tp(".u.sub";`quote;ix)
 
